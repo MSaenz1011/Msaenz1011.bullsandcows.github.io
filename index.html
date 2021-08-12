@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Bulls and Cows</title>
+
+
+</head>
+
+<body>
+  <h1 class="text-center">Picas y Fijas</h1>
+  <h3 class="text-center">Reglas</h3>
+  <p class="text-center">Debes ingresar un <span class="seccion">número de 4 digitos</span> <span class="repeat">no
+      repetitivo.</span> Debes adivinar el número y su posición correcta (fija).
+    De lo contrario, debes intentar a adivinar el número, así no esté en su posición correcta (pica)
+  </p>
+  <br>
+
+  <div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-3">
+      <div class="input-group">
+        <input type="number" class="form-control" id="usernumber" placeholder="Ingrese un número">
+         </div>
+    </div>
+  </div>
+</div>
+
+  <br><br>
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" class="text-center" style="width: 30%">Número Ingresado</th>
+            <th scope="col" class="text-center"  style="width: 30%">Fijas</th>
+            <th scope="col" class="text-center"  style="width: 30%">Picas</th>
+          </tr>
+        </thead>
+        <tbody class="tabla">
+
+        </tbody>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
