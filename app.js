@@ -43,12 +43,14 @@ function verifyUserNum(numero) {
     return true
 }
 
-//El disparador del evento y sus respectivos callbacks (Main event)
+//El disparador del evento y sus respectivos llamados a las funciones requeridas
 $(document).ready(function () {
     $('#usernumber').keypress(function (e) {
         if (e.which === 13) {
             if (numeroAleatorio === '0') {
                 numeroAleatorio = generadorNumber()
+                
+              // Se añadió un console para poder visualizar el número aleatorio generado
                 console.log(numeroAleatorio)
             }
             checkNumber();
